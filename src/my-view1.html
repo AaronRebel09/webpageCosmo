@@ -9,6 +9,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<!-- Import Web Components -->
+  <!-- Carousel -->
+<link rel="import" href="../bower_components/l2t-paper-slider/l2t-paper-slider.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
@@ -20,6 +23,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding: 10px;
       }
     </style>
+
+    <!-- Carousel code -->
+      <l2t-paper-slider auto-progress slide-duration="2" total-slides="3">
+        <paper-slide>#1</paper-slide>
+        <paper-slide>#2</paper-slide>
+        <paper-slide>#3</paper-slide>
+      </l2t-paper-slider>
 
     <div class="card">
       <div class="circle">1</div>
