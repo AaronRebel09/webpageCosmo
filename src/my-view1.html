@@ -24,12 +24,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <!-- Carousel code -->
-      <l2t-paper-slider auto-progress slide-duration="2" total-slides="3">
+    <custom-style>
+      <style is="custom-style">
+        .swipeDis {
+          /* --paper-slide-width: 300px; */
+          --paper-slide-height: 300px;
+          --paper-slide-dot: rgba(120,144,156 ,.8);
+          --paper-slide-dot-selected: rgba(38,50,56 ,1);
+        }
+      </style>
+    </custom-style>
+
+    <div class="card">
+      <!-- Carousel code -->
+      <l2t-paper-slider class="swipeDis" auto-progress slide-duration="2" total-slides="3">
         <paper-slide>#1</paper-slide>
         <paper-slide>#2</paper-slide>
         <paper-slide>#3</paper-slide>
       </l2t-paper-slider>
+    </div>
 
     <div class="card">
       <div class="circle">1</div>
