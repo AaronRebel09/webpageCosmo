@@ -33,11 +33,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
       :host {
-        /*Light-Blue color*/
-        --app-primary-color: #01579B;
-        --app-secondary-color: black;
-        --app-terciary-color:#2196F3 ;
+        /*UNAM App color*/
+        /* Color Tool https://material.io/color/#!/?view.left=0&view.right=0&primary.color=0277BD&secondary.color=F9A825&secondary.text.color=000000&primary.text.color=ffffff */
+        /* light blue */
+        --app-primary-color: #0277bd;
+        --app-primary-light-color: #58a5f0;
+        --app-primary-dark-color: #004c8c;
+        /* yellow */
+        --app-secondary-color: #f9a825; 
+        --app-secondary-light-color:#ffd95a;
+        --app-secondary-dark-color:#c17900;
 
+        --app-primary-text-color:#ffffff;
+        --app-secondary-text-color:#000000;        
+        
+        --app-drawer-content-container: {
+          background-color: var(--app-secondary-dark-color);
+        };    
+        
         display: block;
       }
 
@@ -47,7 +60,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       app-header {
         color: #fff;
-        background-color: var(--app-primary-color);
+        background-color: var(--app-primary-dark-color);
       }
 
       app-header paper-icon-button {
@@ -62,7 +75,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
         padding: 0 16px;
         text-decoration: none;
-        color: var(--app-secondary-color);
+        color: var(--app-primary-text-color);
         line-height: 40px;
       }
 
@@ -86,8 +99,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <app-drawer-layout fullbleed narrow="{{narrow}}">
       <!-- Drawer content -->
-      <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
-        <app-toolbar>Menu</app-toolbar>
+      <app-drawer id="drawer" opened slot="drawer" swipe-open="[[narrow]]">        
+        <app-toolbar><img style="height:64px;" src="images/logounam.png"></app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="[[rootPath]]view1">Presentaci&oacute;n</a>
           <a name="view2" href="[[rootPath]]view2">Investigaci&oacute;n</a>
@@ -103,9 +116,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <app-header slot="header" fixed condenses effects="waterfall">
           <app-toolbar>
             <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
-            <div main-title align="center">
-              <img style="height:54px;" src="images/logounam.png">
-              Lab CosmoNu
+            <div main-title align="center">              
+              Laboratorio de C&oacute;mputo en la naturaleza
               <img style="height:54px;" src="images/lemaunam.png" >
             </div>
           </app-toolbar>
@@ -114,7 +126,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <iron-pages
             selected="[[page]]"
             attr-for-selected="name"
-            fallback-selection="view404"
+            fallback-selection="view1"
             role="main">
           <my-view1 name="view1"></my-view1>
           <my-view2 name="view2"></my-view2>
