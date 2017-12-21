@@ -10,6 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<!-- paper-card -->
+    <link rel="import" href="../bower_components/paper-card/paper-card.html">
 
 <dom-module id="my-view3">
   <template>
@@ -21,14 +23,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-<div class="card">            
-  <h1>Mi labor docente se divide en </h1>
+<paper-card>
+  <div class="card-content">
+    <h5>Mi labor docente se divide en </h5>
   <p><div class="circle">2</div> niveles</p>      
-</div>
+  </div>  
+</paper-card>
 
-<div class="card">
-  <div class="circle">a</div> <h1>Licenciatura</h1>
-  <p>Ingeniería en computación en la FES Aragón, la materia de la cual soy responsable es:</p>
+<paper-card>
+  <div class="card-content">
+    <div class="circle">a</div> <h5>Licenciatura</h5>
+    <h5>
+      <p>Ingeniería en computación en la FES Aragón, la materia de la cual soy responsable es:</p>
   <p>
     Electricidad y Magnetismo
     -Temario
@@ -39,19 +45,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     Tesis
     Dirijo tesis en temas relacionados con cómputo científico con opción a beca de proyecto DGAPA-PAPIIT.
   </p>
-</div>
+    </h5>
+  </div>  
+</paper-card>
 
-<div class="card">
-  <div class="circle">b</div><h1>Programa de Posgrado en ingeniería.</h1>
-  <p> 
+<paper-card>
+  <div class="card-content">
+    <div class="circle">b</div><h5>Programa de Posgrado en ingeniería.</h5>
+    <h5>
+      <p> 
       Me desempeño como tutora del programa de Posgrado en Ingeniería de la FES Aragón, 
       campo de conocimiento Ingeniería de Sistemas, y soy responsable de las materias de:
       Temas selectos de matemáticas:Estadística Avanzada
       -Temario
       Evaluación
       Proyecto de investigación III
-  </p>
-</div>
+      </p>
+    </h5>  
+  </div>
+</paper-card>
 
   </template>
 
