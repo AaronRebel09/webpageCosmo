@@ -10,6 +10,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<!-- paper-card -->
+    <link rel="import" href="../bower_components/paper-card/paper-card.html">
 
 <dom-module id="my-view2">
   <template>
@@ -21,38 +23,88 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <div class="card">            
-      <h1>Mi trabajo de investigación se divide en </h1>
-      <p><div class="circle">2</div> grandes áreas, que he venido siguiendo desde hace varios años.</p>      
-    </div>
 
-    <div class="card">
-      <div class="circle">a</div> <h1>Investigación básica en campos magnéticos y cosmología.</h1>
-      <p> Líneas de investigación
-      Comportamiento de la materia en condiciones extremas: altas temperaturas, densidades y campos magnéticos.
-      
-      Efecto de los campos magnéticos primordiales sobre la evolución del universo temprano, estudios teóricos y simulaciones numéricas.
-      
-      Condensados de Bose-Einstein en el universo temprano.
-      
-      Condensados de Bose-Einstein en computación cuántica.
-      
-      A través de diferentes proyectos de investigación, he contribuido a formar y consolidar grupos de trabajo en estos temas. Actualmente, soy responsable del proyecto DGAPA-PAPIIT IN117817 "Comportamiento de la materia en condiciones extremas en el universo".
-    </p>
-    </div>
+    <paper-card style="margin-bottom:8px;">
+      <div class="card-content">
+        <p>            
+            A través de diferentes proyectos de investigación, he contribuido 
+            a formar y consolidar grupos de trabajo en estos temas. <br>
+            Actualmente, soy responsable del proyecto DGAPA-PAPIIT IN117817 <br>
+            "Comportamiento de la materia en condiciones extremas en el universo". <br>
+          </p>          
+        <h6>Mi trabajo de investigación se divide en </h6>  
+        <p><div class="circle">2</div> grandes áreas, que he venido siguiendo desde hace varios años.</p>      
+      </div>    
+    </paper-card>
 
-    <div class="card">
-      <div class="circle">b</div><h1>Investigación aplicada en estudios ambientales.</h1>
-      <p> Líneas de investigación
-      Desempeño ambiental y calidad de vida de pequeñas comunidades y centros de producción
-      
-      Buenas prácticas ambientales
-      
-      Captación y aprovechamiento de agua de lluvia
-      
-      Análisis del concepto de desarrollo sostenible y de sus aplicaciones
-    </p>
-    </div>
+    <div class="horizontal">
+      <paper-card >
+      <div class="card-content horizontal justified" style="margin-right:4px;">
+        <div class="circle">a</div> 
+        <h6><p>Investigación básica<br>
+            en campos magnéticos y <br>
+             cosmología. <br>
+            </p>
+        </h6>
+        <h6>
+          <p>Líneas de investigación;<br>
+          Comportamiento de la <br>
+          materia en condiciones <br>
+          extremas:<br>
+          altas temperaturas, <br> 
+          densidades<br>
+          y campos magnéticos.<br>
+          </p>
+          <p>                     
+          Efecto de los campos <br>
+          magnéticos primordiales <br>
+          sobre la evolución <br>
+          del universo temprano, <br>
+          estudios teóricos<br>
+          y simulaciones numéricas. <br>      
+          Condensados de <br>
+          Bose-Einstein <br>
+          en el universo temprano. <br>
+          Condensados de <br>
+          Bose-Einstein <br>
+           en computación cuántica. <br>
+          </p>          
+        </h6>                
+      </div>      
+    </paper-card>
+
+    <paper-card >
+      <div class="card-content horizontal justified" style="margin-left:4px;">
+        <div class="circle">b</div>
+        <h6>Investigación aplicada <br>
+            en estudios ambientales.</h6>
+        <h6>
+          <br>
+          <br>
+          <br>
+          
+          <p> Líneas de investigación; <br>
+              Desempeño ambiental y <br>
+              calidad de vida <br>
+              de pequeñas <br>
+              comunidades y <br>
+              centros <br>
+              de producción <br>
+              Buenas prácticas <br>
+              ambientales <br>
+              Captación y <br>
+              aprovechamiento <br>
+              de agua de lluvia <br>      
+              Análisis del <br>
+              concepto de <br>
+              desarrollo <br>
+              sostenible y <br>
+              de sus aplicaciones <br>
+          </p>
+        </h6>      
+      </div>      
+    </paper-card>
+    </div>    
 
   </template>
 
