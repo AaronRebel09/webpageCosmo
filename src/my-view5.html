@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view5">
@@ -21,23 +23,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <div class="card"> 
-      <img src="images/piccinelli.jpg" alt="piccinelli">
-      <p>        
-          Dra.Gabriella Piccinelli Bocchi
-          Ingeniera Física, UAM Azcapotzalco.
-          Maestra en Ciencias (Física) UNAM
-          Doctora en Ciencias (Física) UNAM
-          Profesora de Carrera Titular “B” Tiempo Completo Definitiva.
-          Adscrita al Centro Tecnológico, Área de Estudios Ambientales.
-          Miembro del Sistema Nacional de Investigadores (SNI) nivel I.
-          Catedrática en la Carrera de Ingeniería en Computación y en el Posgrado de Ingeniería.  
-      </p>     
-      <h1>Contacto</h1>
-      <p>e-mail: itzamnagp@gmail.com
-          Avenida Hacienda de Rancho Seco S/N, Impulsora Popular Avicola, 57130 Nezahualcóyotl, MEX
-          Centro Tecnológico Aragón, Primer piso, Cubículos académicos 1, Cubículo 1</p>      
-    </div>
+    <paper-card heading="Dra.Gabriella Piccinelli Bocchi" image="images/piccinelli.jpg">
+        <div class="card-content">
+          <h5>
+            <p>Doctora en Ciencias (Física) UNAM</p>
+            <p>Maestra en Ciencias (Física) UNAM</p>
+            <p>Ingeniera Física, UAM Azcapotzalco</p>
+          </h5>
+          <h6>
+            <p>Profesora de Carrera Titular “B” Tiempo Completo Definitiva</p>
+            <p>Adscrita al Centro Tecnológico, Área de Estudios Ambientales</p>
+            <p>Miembro del Sistema Nacional de Investigadores (SNI) nivel I</p>
+            <p>Catedrática en la Carrera de Ingeniería en Computación y en el Posgrado de Ingeniería</p>
+          </h6>
+          <h5>
+            <p>Direcci&oacute;n</p>
+            <p>Avenida Hacienda de Rancho Seco S/N, Impulsora Popular Avicola, 57130 Nezahualcóyotl, MEX
+            Centro Tecnológico Aragón, Primer piso, Cubículos académicos 1, Cubículo 1</p>
+          </h5>
+          <h5>
+            <p>e-mail: itzamnagp@gmail.com</p>
+          </h5>
+        </div>
+        <div class="card-actions">
+          <paper-button>share</paper-button>
+          <paper-button>Explore!</paper-button>
+        </div>
+    </paper-card>    
 
     <div class="card">
       <h1>Developers</h1>
