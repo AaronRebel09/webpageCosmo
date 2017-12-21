@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view4">
@@ -21,13 +23,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <div class="card">    
-      <img src="images/ss.jpg" alt="serviciosocial">  
-      <h1>Servicio Social</h1>
-      <p>A todos los estudiantes interesados en realizar su servicio social,
-        los recibo a través del Proyecto de Servicio Social,
-        Centro Tecnológico Aragón “Desarrollo Tecnológico de Estudios y Proyectos Multidiciplinarios”,
-        Clave: 2017-12/25-2637.</p>
+    <paper-card heading="Servicio Social" image="images/ss.jpg" class="white" style="margin-top:8px;">
+      <div class="card-content">
+        <h5>
+          <p>A todos los estudiantes interesados,
+            los recibo a través del Proyecto de Servicio Social,
+            Centro Tecnológico Aragón “Desarrollo Tecnológico de Estudios y Proyectos Multidiciplinarios”,
+            Clave: 2017-12/25-2637.</p>          
+        </h5>
+      </div>
+      <div class="card-actions">
+        <paper-button>share</paper-button>
+        <paper-button>Explore!</paper-button>
+      </div>
+    </paper-card>
+
+    <div class="card">
       <p>Las actividades que realizan los estudiantes durante su servicio social a mi cargo se llevan a cabo
         en el Centro Tecnológico Aragón en un horario flexible y están enfocadas principalmente a:</p>
     </div>    
