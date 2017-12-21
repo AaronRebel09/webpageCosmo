@@ -11,6 +11,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view5">
@@ -51,20 +54,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
     </paper-card>        
 
-    <paper-card heading="Aaron Tellez" image="images/aron.png" class="white" style="margin-top:8px;">
+    <paper-card heading="Desarrollador Web Jr" image="images/aron.png" class="white" style="margin-top:8px;">
       <div class="card-content">
-        <h5>
-          <p>Desarrollador Web Jr</p>
+        <h5>          
           <p>Rodrigo Aaron Martinez Tellez</p>
-          <p>e-mail: arontellezm@gmail.com</p>
-          <p>cel: 55 41 29 74 91</p>
-          <p>github: AaronRebel09</p>
+          <p>e-mail: arontellezm@gmail.com</p>                
         </h5>
       </div>
-      <div class="card-actions">
-        <paper-button>share</paper-button>
-        <paper-button>Explore!</paper-button>
-      </div>
+      <div class="card-actions">  
+        <paper-button>
+          <div role="listbox">
+            <!-- phone -->
+            <paper-icon-item>
+                <iron-icon icon="communication:phone" slot="item-icon">
+                </iron-icon>
+              <paper-item-body two-line>
+                <div>Celular</div>
+                <div secondary>55 41 29 74 91</div>
+              </paper-item-body>
+            </paper-icon-item>          
+          </div>
+        </paper-button>                                                  
+        <paper-button>
+          <div role="listbox">
+          <!-- github -->
+            <paper-icon-item>
+                <iron-icon src="icons/Octocat.jpg">
+                </iron-icon>
+              <paper-item-body two-line>
+                <div>Github</div>
+                <div secondary>@AaronRebel09</div>
+              </paper-item-body>
+            </paper-icon-item>          
+          </div>
+        </paper-button>  
+        </div>    
     </paper-card>
 
     <paper-card style="margin-top:8px;">
