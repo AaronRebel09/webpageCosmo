@@ -14,6 +14,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- Import Web Components -->
   <!-- Carousel -->
   <link rel="import" href="../bower_components/l2t-paper-slider/l2t-paper-slider.html">  
+  <!-- paper-card -->
+    <link rel="import" href="../bower_components/paper-card/paper-card.html">
 
 <dom-module id="my-view1">
   <template>
@@ -29,43 +31,51 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <style is="custom-style">
         .swipeDis {
           /* --paper-slide-width: 300px; */
-          --paper-slide-height: 300px;
+          --paper-slide-height: 50%;
           --paper-slide-dot: rgba(120,144,156 ,.8);
           --paper-slide-dot-selected: rgb(237, 238, 238);
         }
       </style>
     </custom-style>
 
-    <div class="card">
-      <!-- Carousel code -->
+    <paper-card>
+      <div class="card-content">
+        <!-- Carousel code -->
       <l2t-paper-slider class="swipeDis" auto-progress slide-duration="25" total-slides="3">
         <paper-slide>
-          <img src="images/ondasg.gif" alt="ondasgravitacionales" style="width:100%;height:100%;padding-bottom:56%;position:relative;">
+          <img src="images/ondasg.gif" alt="ondasgravitacionales" style="width:100%;height:50%;">
         </paper-slide>
         <paper-slide>          
-            <img src="images/expansion.gif" alt="expansion" style="width:100%;height:100%;padding-bottom:56%;position:relative;">
+            <img src="images/expansion.gif" alt="expansion" style="width:100%;height:50%;">
         </paper-slide>
         <paper-slide>
-            <img src="images/programmer.gif" alt="programmer" style="width:100%;height:100%;padding-bottom:56%;position:relative;">
+            <img src="images/programmer.gif" alt="programmer" style="width:100%;height:50%;">
         </paper-slide>
       </l2t-paper-slider>
-    </div>
-
-    <div class="card">
-      <p>El universo es un buen laboratorio para el estudio del comportamiento de la materia en condiciones extremas,
+      </div>      
+    </paper-card>
+      
+    <paper-card>
+      <div class="card-content" style="margin-top:8px;">
+        <p>El universo es un buen laboratorio para el estudio del comportamiento de la materia en condiciones extremas,
         que vale la pena explorar y es una buena oportunidad para desarrollar formalismos que pueden aplicarse
         en otras &aacute;reas de la f&iacute;sica.
       </p>
       <h3 align="right">Dra. Gabriella Piccinelli Bocchi</h3>
-    </div>
-  
-    <div class="card">
-        <h1>Grupo Cosmolog&iacute;a</h1>
+      </div>      
+    </paper-card>
+
+    <paper-card>
+      <div class="card-content" style="margin-top:8px;">
+        <h5><p>Grupo Cosmolog&iacute;a</p></h5>
+        <h6>
         <p>Conformado por estudiantes de Ingenier&iacute;a
-          en Computaci&oacute;n de la fes Arag&oacute;n: </p>
+        en Computaci&oacute;n de la fes Arag&oacute;n: </p>
         <p>Integrales Num&eacute;ricas.</p>        
         <p>C&oacute;digos Evolutivos.</p>
-    </div>    
+        </h6>        
+      </div>    
+    </paper-card>    
 
   </template>
 
